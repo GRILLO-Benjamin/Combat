@@ -1,13 +1,17 @@
-<?php 
-    try {
-        /* Connexion à une base MySQL avec l'invocation de pilote */
-        $dsn = 'mysql:dbname=combat;host=127.0.0.1';
-        $user = 'root';
-        $password = '';
-        $db = new PDO($dsn, $user, $password, [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        ]);
-    } catch (\Throwable $th) {
-        throw $th;
-    }
-?>
+<?php
+#server name
+$sName = "localhost";
+# user name
+$uName = "root";
+# password
+$pass= "";
+
+#database name
+$db_name = "jeux_de_combat";
+
+try {
+    $conn = new PDO("mysql:host=$sName;dbname=$db_name;charset=utf8", $uName, $pass);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die('Erreur:' . $e->getMessage());
+}

@@ -1,17 +1,11 @@
 <!-- affichant l'interface du mini-jeu de combat
 ○ Le joueur peut créer un personnage
 ○ Le joueur peut utiliser un personnage existant -->
+<?php
 
-<!DOCTYPE html>
-<html lang="en">
+include "Utils/Header.php";
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garage Fighter</title>
-</head>
-
+?>
 <body>
     <?php
 //     require 'class/Autoloader.php';

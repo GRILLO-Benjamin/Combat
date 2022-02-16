@@ -6,15 +6,18 @@
 ■ frapper un autre personnage
 ■ recevoir des dégâts. -->
 <?php 
-class Personnage{
+Class Character{
 
-    public $vie = 30;
-    public  $atk = 20;
+    public $vie = 100;
+    public  $atk = 10;
     public $nom;
 
     public function __construct($nom){
         $this->nom = $nom;
 
+    }
+    public function attaque ($cible){
+        $cible->vie -= $this->atk;
     }
 
     public function regenerer($vie = null){
@@ -30,9 +33,28 @@ class Personnage{
         return $this->vie <= 0;
     }
 
-    public function attaque ($cible){
 
-        $cible->vie -= $this->atk;
-    }
+}
+Class Warrior extends Character{
+    public $vie = 120;
+    public  $atk = 8;
+    
+}
+
+Class Rogue extends Character{
+    public $vie = 100;
+    public  $atk = 15;
+    
+}
+
+Class Mage extends Character{
+    public $vie = 80;
+    public  $atk = 20;
+
+}
+
+Class Ranger extends Character{
+    public $vie = 100;
+    public  $atk = 15;
 
 }

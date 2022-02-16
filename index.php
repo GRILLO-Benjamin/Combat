@@ -17,21 +17,21 @@
 //     require 'class/Autoloader.php';
 // Autoloader :: register();
 // $form = new BootstrapForm($POST);
-require 'Personnage.php';
+require './classes/Personnage.php';
 
-$merlin = new Personnage("Merlin");
-$harry = new Personnage("Harry");
+$rogue = new Rogue("Rogue");
+$warrior = new Warrior("Warrior");
 
-$merlin->attaque($harry);
-if($harry->mort()){
-    echo 'Harry est mort! ';
+$rogue->attaque($warrior);
+if($warrior->mort()){
+    echo 'Warrior est mort! '.'<br>';
 } else {
-    echo 'Harry à survécu avec '.$harry->vie;
+    echo 'Warrior à survécu avec '.$warrior->vie.'<br>';
 }
 
-var_dump($merlin);
+var_dump($rogue);
 echo "<br>";
-var_dump($harry);
+var_dump($warrior);
 echo "<br>";
     ?>
 </body>

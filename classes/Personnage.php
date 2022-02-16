@@ -33,6 +33,9 @@ Class Character{
         return $this->vie <= 0;
     }
 
+    public function vie(){
+        return $this->vie;
+    }
 
 }
 Class Warrior extends Character{

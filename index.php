@@ -7,27 +7,7 @@ include "Utils/Header.php";
 
 ?>
 <body>
-    <?php
-//     require 'class/Autoloader.php';
-// Autoloader :: register();
-// $form = new BootstrapForm($POST);
-require './classes/Personnage.php';
 
-$rogue = new Rogue("Rogue");
-$warrior = new Warrior("Warrior");
-
-$rogue->attaque($warrior);
-if($warrior->mort()){
-    echo 'Warrior est mort! '.'<br>';
-} else {
-    echo 'Warrior à survécu avec '.$warrior->vie.'<br>';
-}
-
-var_dump($rogue);
-echo "<br>";
-var_dump($warrior);
-echo "<br>";
-    ?>
 </body>
 
 </html>

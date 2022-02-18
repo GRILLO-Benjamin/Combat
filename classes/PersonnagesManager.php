@@ -6,7 +6,7 @@ stocke les données et comporte ces fonctionnalités :
 ○ sélectionner un personnage ------ selectCharacter(character)
 ○ compter le nombre de personnages ------ countCharacter(character)
 ○ récupérer une liste de plusieurs personnages ------ listCharacters() -> array(character)
-○ savoir si un personnage existe. ------ isCreatedCharacter(boolean)
+○ savoir si un personnage existe. ------ isCreatedCharacter(boolean)-->
 <?php
 if (isset($_POST['pseudo'])) {
     //connexion bdd 

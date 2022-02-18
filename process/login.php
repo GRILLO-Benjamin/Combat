@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['name'])) {
     //connexion bdd
-    $sName = "localhost";
+    $sName = "127.0.0.1";
 # user name
     $uName = "root";
 # password
@@ -22,9 +22,9 @@ if (isset($_POST['name'])) {
     $isSuccess =  $pdostmnt->execute(array($_POST['name']));
 
     if ($isSuccess) {
-        header('Location: ./login.php?success=Le pseudo à bien été ajouté !');
+        header('Location: ../login.php?success=Le pseudo à bien été ajouté !');
     } else {
-        header("Location: ./login.php?error=Erreur lors de l'enregistrement du pseudo !");
+        header("Location: ../login.php?error=Erreur lors de l'enregistrement du pseudo !");
     }
 
     //rediriger vers une page

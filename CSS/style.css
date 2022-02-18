@@ -22,11 +22,14 @@ body {
 }
 
 h1{
-    font-family: "single-fighter-regular";
+    font-family:"single-fighter-regular";
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+}
 
+h5{
+    color: aliceblue;
 }
 
 p{
@@ -35,8 +38,10 @@ p{
     font-size: large;
 }
 
-h5{
-    color: aliceblue;
+.col-md-12{
+    margin-top: 40px;
+}
 
-
+.validbtn{
+    background-color: #fff;
 }

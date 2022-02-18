@@ -50,3 +50,7 @@ p{
 background-color: rgb(189, 159, 148);
 border: 4px solid rgb(131, 26, 12);
 }
+
+.d-block{
+    margin-left: 33%;
+}

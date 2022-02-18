@@ -18,7 +18,7 @@ if (isset($_POST['pseudo'])) {
         die('erreur db');
     }
     // faire la requete
-    $pdostmnt = $pdo->prepare('INSERT INTO characters(name,classe,genre,life) VALUES (?)');
+    $pdostmnt = $pdo->prepare('INSERT INTO characters(id,name,classe,genre,race,life) VALUES (?,?,?,?,?,?)');
     $isSuccess =  $pdostmnt->execute(array($_POST['pseudo']));
 
     if ($isSuccess) {

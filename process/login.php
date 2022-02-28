@@ -1,23 +1,8 @@
 <?php
 if (isset($_POST['name'])) {
     //connexion bdd
-    $sName = "127.0.0.1";
-# user name
-    $uName = "root";
-# password
-    $pass= "";
+  include "../config/db.php";
 
-#database name
-    $db_name = "jeux_de_combat";
-
-
-    // faire la requete
-    try {
-        $conn = new PDO("mysql:host=$sName;dbname=$db_name;charset=utf8", $uName, $pass);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch (PDOException $e) {
-        die('Erreur:' . $e->getMessage());
-    }
     $pdostmnt = $conn->prepare('INSERT INTO users(name) VALUES (?)');
     $isSuccess =  $pdostmnt->execute(array($_POST['name']));
 

@@ -8,10 +8,9 @@ $actif integer ou boolean
 method° takeNextTurn()
 -->
 <?php
-//     require 'class/Autoloader.php';
-// Autoloader :: register();
-// $form = new BootstrapForm($POST);
-require './classes/Personnage.php';
+
+require './config/autoload.php';
+Autoloader::register();
 
 $rogue = new Rogue("Rogue");
 $warrior = new Warrior("Warrior");

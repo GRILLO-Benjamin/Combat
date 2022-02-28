@@ -8,6 +8,6 @@ class Autoloader
 
     static function autoload($class_name)
     {
-        require 'class/' . '.php';
+        require 'classes/' .$class_name. '.php';
     }
 }

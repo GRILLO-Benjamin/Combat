@@ -8,7 +8,10 @@ include "Utils/Header.php";
 ?>
 
 <body>
-
+    <?php
+    require './config/autoload.php';
+    Autoloader::register();
+    ?>
     <div class="container">
         <!-- Stack the columns on mobile by making one full-width and the other half-width -->
         <h1>GARAGE FIGHTERS</h1>

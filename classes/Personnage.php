@@ -9,7 +9,7 @@
 Class Character{
 
     public $vie = 100;
-    public  $atk = 10;
+    public $atk = 10;
     public $nom;
 
     public function __construct($nom){

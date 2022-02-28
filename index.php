@@ -17,7 +17,7 @@ include "Utils/Header.php";
                 <img id="charac" src="./img/warrior_male.webp" alt="warrior_male" class="character_img">
                 <img id="charac" src="./img/warrior_female.webp" alt="warrior_female" class="character_img">
             </div>
-            <div class="col-4 col-md-4">
+            <div class="col-6 col-md-6">
                 <p>Warriors are melee fighters highly trained in the arts of weaponry. These mighty warriors, strong and quick on the battlefield, depend on their heavy plate armor, shields, and battle prowess to defend themselves and ensure enemies don't focus on their softer-skinned allies.
                 </p>
             </div>
@@ -27,7 +27,7 @@ include "Utils/Header.php";
                 <img id="charac" src="./img/mage_male.webp" alt="mage_male" class="character_img">
                 <img id="charac" src="./img/mage_female.webp" alt="mage_female" class="character_img">
             </div>
-            <div class="col-4 col-md-4 ">
+            <div class="col-6 col-md-6 ">
                 <p> Souvent confondu avec le Démoniste, le Mage est ce que l'on nomme "Sorcier" dans la plupart des univers d'Heroic Fantasy. Lanceur de sorts hors pair, il maîtrise la magie des Arcanes, du Givre et du Feu à la perfection et s'en sert afin d'anéantir ses adversaires grâce à des sortilèges dévastateurs.
                 </p>
             </div>
@@ -37,7 +37,7 @@ include "Utils/Header.php";
                 <img id="charac" src="./img/rogue_male.webp" alt="rogue_male" class="character_img">
                 <img id="charac" src="./img/rogue_female.webp" alt="rogue_female" class="character_img">
             </div>
-            <div class="col-4 col-md-4">
+            <div class="col-6 col-md-6">
                 <p> In World of Warcraft, rogues are lightly armored meleers who use stealth to get in close and then hit their target with precision strikes. The rogue is one of four classes in the game that focuses solely on DPS: their three talent specializations only changing their preferred way of dealing damage.
                 </p>
             </div>
@@ -47,7 +47,7 @@ include "Utils/Header.php";
                 <img id="charac" src="./img/ranger_male.webp" alt="ranger_male" class="character_img">
                 <img id="charac" src="./img/ranger_female.webp" alt="ranger_female" class="character_img">
             </div>
-            <div class="col-4 col-md-4">
+            <div class="col-6 col-md-6">
                 <p> Rangers are members of several organizations on Azeroth, Outland, and alternate Draenor, skilled in wilderness survival and exploration. The most famous of them are the various groups of elven rangers: elite archers and scouts that may also work with animals.
                 </p>
             </div>

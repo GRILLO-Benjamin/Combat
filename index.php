@@ -13,8 +13,8 @@ include "Utils/Header.php";
     Autoloader::register();
     ?>
     <div class="container">
-        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-        <h1>GARAGE FIGHTERS</h1>
+
+    <h1>GARAGE FIGHTERS</h1>
         <div class="row">
             <div class="col-md-6">
                 <img id="charac" src="./img/warrior_male.webp" alt="warrior_male" class="character_img">

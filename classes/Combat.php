@@ -8,37 +8,37 @@ $perso = $_SESSION['perso'];
 }
 
 // Si on a voulu créer un personnage.
-if (isset($_POST['creer']) && isset($_POST['nom']) && isset($_POST['type'])) {
+if (isset($_POST['creer']) && isset($_POST['name']) && isset($_POST['class'])) {
 
   // On crée un nouveau personnage.
 
-switch ($_POST['type'])
+switch ($_POST['class'])
 {
     case 'Warrior': 
-    $perso =  new Warrior (['nom'=>$_POST['nom'],'type' =>$_POST['type']]); 
+    $perso =  new Warrior (['name'=>$_POST['name'],'class' =>$_POST['class']]); 
     break;
 
     case 'Mage': 
-    $perso =  new Mage (['nom'=> $_POST['nom'],'type'=>$_POST['type']]); 
+    $perso =  new Mage (['name'=> $_POST['name'],'class'=>$_POST['class']]); 
     break;
 
     case 'Rogue': 
-    $perso =  new Rogue (['nom'=>$_POST['nom'],'type'=>$_POST['type']]);
+    $perso =  new Rogue (['name'=>$_POST['name'],'class'=>$_POST['class']]);
     break;
 
     case 'Ranger': 
-    $perso =  new Ranger (['nom'=>$_POST['nom'],'type'=>$_POST['type']]);
+    $perso =  new Ranger (['name'=>$_POST['name'],'class'=>$_POST['class']]);
     break;
 }
 
 
   // Si le nom est invalide (string vide) on revoit une erreur
-if (!$perso->nomValide()) {
+if (!$perso->validName()) {
     $message = 'Le nom choisi est invalide.';
     unset($perso);
 }
   // Si le nom existe déjà
-elseif ($manager->exists($perso->nom())) {
+elseif ($manager->exists($perso->name())) {
     $message = 'Le nom du personnage est déjà pris.';
     unset($perso);
 }
@@ -48,10 +48,10 @@ else {
 }
 }
 // Si on a voulu utiliser un personnage.
-elseif (isset($_POST['utiliser']) && isset($_POST['nom'])) {
+elseif (isset($_POST['utiliser']) && isset($_POST['name'])) {
   // Si celui-ci existe.
-if ($manager->exists($_POST['nom'])) {
-    $perso = $manager->get($_POST['nom']);
+if ($manager->exists($_POST['name'])) {
+    $perso = $manager->get($_POST['name']);
 }
 else {
     $message = 'Ce personnage n\'existe pas !'; 
@@ -77,7 +77,7 @@ else {
     $retour = $perso->frapper($persoAFrapper); 
 
     switch ($retour) {
-        case Personnage::CEST_MOI :
+        case Character::CEST_MOI :
         $message = 'Mais... pourquoi voulez-vous vous frapper ???';
         break;
         
@@ -88,7 +88,7 @@ else {
         $manager->update($persoAFrapper, $perso->strength());
         break;
         
-        case Personnage::PERSONNAGE_TUE :
+        case Character::PERSONNAGE_TUE :
         $message = 'Vous avez tué ce personnage !';
         
         $manager->update($perso);

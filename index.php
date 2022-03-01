@@ -13,12 +13,12 @@ include "Utils/Header.php";
     Autoloader::register();
     ?>
     <div class="container">
-        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-        <h1>GARAGE FIGHTERS</h1>
+
+    <h1>GARAGE FIGHTERS</h1>
         <div class="row">
             <div class="col-md-6">
-                <img id="charac" src="./img/warrior_male.webp" alt="warrior_male" class="character_img">
-                <img id="charac" src="./img/warrior_female.webp" alt="warrior_female" class="character_img">
+                <img id="charac1" src="./img/warrior_male.webp" alt="warrior_male" class="character_img" onclick="characChoice()">
+                <img id="charac2" src="./img/warrior_female.webp" alt="warrior_female" class="character_img" onclick="characChoice()">
             </div>
             <div class="col-6 col-md-6">
                 <p>Warriors are melee fighters highly trained in the arts of weaponry. These mighty warriors, strong and quick on the battlefield, depend on their heavy plate armor, shields, and battle prowess to defend themselves and ensure enemies don't focus on their softer-skinned allies.
@@ -27,8 +27,8 @@ include "Utils/Header.php";
         </div>
         <div class="row">
             <div class="col-md-6">
-                <img id="charac" src="./img/mage_male.webp" alt="mage_male" class="character_img">
-                <img id="charac" src="./img/mage_female.webp" alt="mage_female" class="character_img">
+                <img id="charac3" src="./img/mage_male.webp" alt="mage_male" class="character_img" onclick="characChoice()">
+                <img id="charac4" src="./img/mage_female.webp" alt="mage_female" class="character_img" onclick="characChoice()">
             </div>
             <div class="col-6 col-md-6 ">
                 <p> Souvent confondu avec le Démoniste, le Mage est ce que l'on nomme "Sorcier" dans la plupart des univers d'Heroic Fantasy. Lanceur de sorts hors pair, il maîtrise la magie des Arcanes, du Givre et du Feu à la perfection et s'en sert afin d'anéantir ses adversaires grâce à des sortilèges dévastateurs.
@@ -37,8 +37,8 @@ include "Utils/Header.php";
         </div>
         <div class="row">
             <div class="col-md-6">
-                <img id="charac" src="./img/rogue_male.webp" alt="rogue_male" class="character_img">
-                <img id="charac" src="./img/rogue_female.webp" alt="rogue_female" class="character_img">
+                <img id="charac5" src="./img/rogue_male.webp" alt="rogue_male" class="character_img" onclick="characChoice()">
+                <img id="charac6" src="./img/rogue_female.webp" alt="rogue_female" class="character_img" onclick="characChoice()">
             </div>
             <div class="col-6 col-md-6">
                 <p> In World of Warcraft, rogues are lightly armored meleers who use stealth to get in close and then hit their target with precision strikes. The rogue is one of four classes in the game that focuses solely on DPS: their three talent specializations only changing their preferred way of dealing damage.
@@ -47,8 +47,8 @@ include "Utils/Header.php";
         </div>
         <div class="row">
             <div class="col-md-6">
-                <img id="charac" src="./img/ranger_male.webp" alt="ranger_male" class="character_img">
-                <img id="charac" src="./img/ranger_female.webp" alt="ranger_female" class="character_img">
+                <img id="charac7" src="./img/ranger_male.webp" alt="ranger_male" class="character_img" onclick="characChoice()">
+                <img id="charac8" src="./img/ranger_female.webp" alt="ranger_female" class="character_img" onclick="characChoice()">
             </div>
             <div class="col-6 col-md-6">
                 <p> Rangers are members of several organizations on Azeroth, Outland, and alternate Draenor, skilled in wilderness survival and exploration. The most famous of them are the various groups of elven rangers: elite archers and scouts that may also work with animals.

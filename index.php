@@ -12,7 +12,7 @@ include "Utils/Header.php";
     require './config/autoload.php';
     Autoloader::register();
     ?>
-    <div class="container">
+    <div class="container" id="characters">
 
     <h1>GARAGE FIGHTERS</h1>
         <div class="row">

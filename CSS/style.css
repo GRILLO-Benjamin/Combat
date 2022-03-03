@@ -20,8 +20,8 @@ body {
     border: 2px solid burlywood;
     border-radius: 30%;
 }
-.selected-img{
-    background-color: green;
+.selected_img{
+    background-color: rgb(48, 165, 48);
 }
 
 h1{

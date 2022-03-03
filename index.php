@@ -14,7 +14,7 @@ include "Utils/Header.php";
     ?>
     <div class="container" id="characters">
 
-    <h1>GARAGE FIGHTERS</h1>
+        <h1>GARAGE FIGHTERS</h1>
         <div class="row">
             <div class="col-md-6">
                 <img id="charac" src="./img/warrior_male.webp" alt="warrior_male" class="character_img">
@@ -75,19 +75,19 @@ include "Utils/Header.php";
             <div class="carousel-item active">
                 <img src="./img/ranger_male.webp" class="d-block " alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>NAME OF THE CREATED CHARACTER</h5>
+                    <h5>FIGHT WITH "NAME OF THE CREATED CHARACTER"</h5>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="./img/rogue_female.webp" class="d-block" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>NAME OF THE CREATED CHARACTER</h5>
+                    <h5>FIGHT WITH "NAME OF THE CREATED CHARACTER"</h5>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="./img/mage_male.webp" class="d-block " alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>NAME OF THE CREATED CHARACTER</h5>
+                    <h5>FIGHT WITH "NAME OF THE CREATED CHARACTER"</h5>
                 </div>
             </div>
         </div>
@@ -101,6 +101,7 @@ include "Utils/Header.php";
         </button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./JS/main.js"></script></body>
+    <script src="./JS/main.js"></script>
+</body>
 
 </html>
